@@ -2,8 +2,6 @@ package de.tuberlin.dia.nlp.analysis
 
 import de.tuberlin.dia.nlp.utils
 
-import scala.io.Source
-
 /**
   * @author cschulze
   */

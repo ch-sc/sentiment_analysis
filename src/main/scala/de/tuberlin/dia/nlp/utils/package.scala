@@ -2,8 +2,6 @@ package de.tuberlin.dia.nlp
 
 import java.io.FileNotFoundException
 
-import sun.misc.IOUtils
-
 /**
   * @author cschulze
   */
