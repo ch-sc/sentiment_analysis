@@ -8,7 +8,7 @@ import java.util.Locale
 class Processor(stopWords: List[String]) {
 
   /**
-    * finds all terms (regex: \\W+) in a text, sanitizing them by filtering stop words.
+    * finds all terms (regex: \\W+) in a text, sanitizing them by filtering stop words and conversion to lower case.
     *
     * @param text input text
     * @return list of terms
