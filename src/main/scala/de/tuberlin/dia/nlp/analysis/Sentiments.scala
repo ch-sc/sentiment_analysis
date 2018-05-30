@@ -35,7 +35,7 @@ class Sentiments(sentiFile: String, processor: Processor) {
     val (totalSentiment, hits) = terms.filter(t => sentiments.contains(t))
       .foldLeft((0, 0))((acc, x) => (acc._1 + sentiments(x), acc._2 + 1))
 
-    (totalSentiment / hits, hits / terms.length)
+    (totalSentiment / hits.toDouble, hits / terms.length.toDouble)
   }
 
 }

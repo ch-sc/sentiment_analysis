@@ -15,10 +15,12 @@ object App {
 
     // prepare analysis
     val processor = new Processor(utils.readFileLines("stopwords.txt"))
-    val sentiAnalyse = new Sentiments("AFINN-112.txt", processor)
+    val sentiAnalyse = new Sentiments("AFINN-111.txt", processor)
 
     // load input text
     val text = utils.readFile("test.txt")
     val data = sentiAnalyse.analyzeSentiments(text)
+
+    System.out.println(data)
   }
 }
